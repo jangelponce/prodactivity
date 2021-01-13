@@ -1,7 +1,7 @@
 module.exports = {
   devServer: {
-    allowedHosts: ["dev.net"],
-    public: "dev.net",
+    allowedHosts: [process.env.VUE_CLIENT_DOMAIN],
+    public: process.env.VUE_CLIENT_DOMAIN,
     host: "0.0.0.0"
   }
 };
